@@ -205,9 +205,20 @@
     <Compile Include="Migrations\201811160521229_InitialModel.Designer.cs">
       <DependentUpon>201811160521229_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811160554595_AddedDomainModel.cs" />
+    <Compile Include="Migrations\201811160554595_AddedDomainModel.Designer.cs">
+      <DependentUpon>201811160554595_AddedDomainModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811160719398_OverrideConventions.cs" />
+    <Compile Include="Migrations\201811160719398_OverrideConventions.Designer.cs">
+      <DependentUpon>201811160719398_OverrideConventions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -292,6 +303,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811160521229_InitialModel.resx">
       <DependentUpon>201811160521229_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811160554595_AddedDomainModel.resx">
+      <DependentUpon>201811160554595_AddedDomainModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811160719398_OverrideConventions.resx">
+      <DependentUpon>201811160719398_OverrideConventions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
