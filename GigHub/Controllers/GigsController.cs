@@ -29,6 +29,7 @@ namespace GigHub.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel gigFormViewModel)
         {
             //ModelState : Its the property of the controller
